@@ -1,2 +1,2 @@
 # conniekim.github.io
-Connie Kim
+A personal website
