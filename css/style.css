@@ -1,3 +1,10 @@
+#last-update {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+}
+
 body {
 	background-color: #fff;
 	padding: 70px 100px;
