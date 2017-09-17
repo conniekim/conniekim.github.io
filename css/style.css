@@ -1,163 +1,148 @@
-#last-update {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  margin-right: 20px;
+nav.navbar {
+  background: white;
+  height: 220px;
 }
 
-body {
-	background-color: #fff;
-	padding: 70px 100px;
-}
+/*#menu {
+  margin-top: 220px;
+}*/
 
-.row {
-	margin-bottom: 50px;
-}
-
-@media (min-width: 992px) {
-	#sidebar {
-		position: fixed;
-	}
-}
-
-i.fa-github {
-	font-size: 25px;
-}
-
-.btn-circle {
-  width: 50px;
-  height: 50px;
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.33;
-  border-radius: 25px;
-  margin-right: 8px;
-}
-
-.btn-github-alt {
-	color: #fff;
-	background-color: #000;
-	border-color: #000;
-}
-
-.btn-linkedin {
-	color: #fff;
-	background-color: #0273B2;
-	border-color: #0273B2;
-}
-
-.btn-twitter {
-	color: #fff;
-	background-color: #2EAAE1;
-	border-color: #2EAAE1;
-}
-
-.btn-tumblr {
-	color: #fff;
-	background-color: #2A445F;
-	border-color: #2A445F;
-}
-
-h1 {
-	font-family: 'Pontano Sans', sans-serif;
-	font-weight: 300;
-	font-size: 40px;
-	color: #5cc1a9;
-}
-
-h1 a {
-	color: #5cc1a9 !important;
+.navbar-brand {
+  position: absolute;
+  font-family: "Arial";
+  /*margin-top: -0.5em;*/
+  /*margin-left: 1.3em;*/
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+  color: #F59A9A;
+  text-shadow: -3px 2.5px #FFE0E0;
+  line-height: 60px;
+  letter-spacing: 5px;
 }
 
 h2 {
-	font-family: 'Pontano Sans', sans-serif;
-	font-size: 25px;
-	margin-top: 10px;
-	margin-bottom: 5px;
+  font-family: "Arial";
+  font-size: 18px;
+  font-weight: bold;
+  color: #F59A9A;
+  /*text-shadow: -1px 0.5px #FFE0E0;*/
+  letter-spacing: 2px;
+  position: relative;
 }
 
-h3 {
-	font-family: 'Yantramanav', sans-serif;
-	font-weight: 300;
-	font-size: 20px;
-	margin-top: 3px;
-	margin-bottom: 3px;
+h2 span {
+  position: absolute;
+  top: 200px;
 }
 
-h4 {
-	font-family: 'Yantramanav', sans-serif;
-	font-weight: 100;
-	font-size: 20px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	margin-left: 25px;
+p, li {
+  font-family: "Arial";
+  font-size: 12px;
+  color: black;
+  letter-spacing: 1.3px;
+  /*text-align: justify;*/
+  margin-left: 1.5em;
+  margin-bottom: 0;
 }
 
-p {
-	font-family: 'Pontano Sans', sans-serif;
-	font-size: 15px;
+body {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-top: 220px;
+  padding-right: 5em;
+  background-color: #00000;
 }
 
-a:link {
-	color: #5cc1a9;
-	text-decoration: none;
+ul.skills-list {
+  list-style-type: none;
+  padding: 0px;
+
+
 }
 
-a:visited {
-	color: #5cc1a9;
-	text-decoration: none;
+.skills-list > li:before {
+  content: "> ";
+  color: #F1BB87;
+}
+
+a {
+  color: #F1BB87;
+  text-decoration: none;
 }
 
 a:hover, a:active {
-	color: #5cc1a9;
-	text-decoration: none;
+  /*font*/
+  color: #F6CD5D;
+  /*text-decoration: underline;*/
 }
 
-a.active {
-	color: #5cc1a9 !important;
+/*.active {
+  color: #01AFB0;
+  font-weight: bold;
+  text-decoration: underline;
+  border-bottom-color: #01AFB0;
+  border-bottom: 3px solid;
+}*/
+
+nav ul li a {
+  font-size: 16px;
+  color: #F1BB87;
+  letter-spacing: 1.46px;
+  top: 0;
+  margin-top: -4em;
+  padding-top: 0;
+  /*margin-right: */
 }
 
-a b {
-	color: #5cc1a9 !important;
+nav ul li a:hover {
+  /*font-size: 16px;*/
+  color: #F6CD5D;
+  /*font-weight: bold;*/
+  /*text-decoration: underline;*/
+  border-bottom-color: #F6CD5D;
+  border-bottom: 3px solid;
+  /*line-height: 2px;*/
 }
 
-#sidebar a:link {
-	color: black;
-	text-decoration: none;
+nav ul li a:active {
+  /*font-size: 16px;*/
+  color: #F6CD5D;
+  /*font-weight: bold;*/
+  /*text-decoration: underline;*/
+  border-bottom-color: #F6CD5D;
+  border-bottom: 3px solid;
+  /*line-height: 2px;*/
 }
 
-#sidebar a:visited {
-	color: black;
-	text-decoration: none;
+a:focus {
+  color: #F6CD5D;
+  text-decoration: none;
+  /*border-bottom-color: #773344;*/
+  border-bottom: none;
 }
 
-#sidebar a:hover, a:active {
-	color: #5cc1a9;
-	text-decoration: none;
+nav ul li {
+  margin-top: 0px;
+  margin-left: 15px;
+  margin-right: 0px;
 }
 
-#content {
-	padding-top: 20px;
-	max-width: 100%;
-	overflow-x: hidden;
+#social-media {
+  font-family: "Arial";
+  font-size: 12px;
+  letter-spacing: 1.3px;
+  padding-left: 1.5em;
+  text-align: left;
 }
 
-#buttons {
-	padding-top: 10px;
+#social-media a {
+  color: #EFA662;
+  /*border*/
 }
 
-#buttons a:link {
-	color: #fff;
-}
-
-#buttons a:visited {
-	color: #fff;
-}
-
-#buttons a:hover {
-	color: #5cc1a9;
-}
-
-#buttons a:active {
-	color: #fff;
+#social-media a:hover {
+  color: #F6CD5D;
+  text-decoration: none;
 }
