@@ -56,7 +56,7 @@ body {
   padding-top: 220px;
   padding-right: 5em;
   background-color: white;
-  position: fixed;
+  position: relative !important;
 }
 
 
