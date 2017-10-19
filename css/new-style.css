@@ -1,14 +1,12 @@
-nav.navbar {
-  background: white;
+.navbar {
+  /* background: white; */
   height: 220px;
+  padding-right:50px;
+  padding-left:100px;
 }
 
-/*#menu {
-  margin-top: 220px;
-}*/
-
-.navbar-brand {
-  position: absolute;
+.navbar-light .navbar-brand {
+  position: fixed !important;
   font-family: "Arial";
   /*margin-top: -0.5em;*/
   /*margin-left: 1.3em;*/
@@ -19,10 +17,16 @@ nav.navbar {
   text-shadow: -3px 2.5px #FFE0E0;
   line-height: 60px;
   letter-spacing: 5px;
+  /* max-width: 400px; */
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #F6CD5D;
 }
 
 h2 {
   font-family: "Arial";
+  /* font-size: 1.4vw; */
   font-size: 18px;
   font-weight: bold;
   color: #F59A9A;
@@ -49,17 +53,37 @@ p, li {
 body {
   width: 100%;
   height: auto;
-  position: relative;
   padding-top: 220px;
   padding-right: 5em;
-  background-color: #00000;
+  background-color: white;
+  position: fixed;
+}
+
+
+#sidebar {
+  /* width: fixed; */
+  padding-left:4em;
+  padding-top:2em;
+  padding-bottom:2em;
+}
+
+.fixed { 
+  overflow:hidden;
+}
+.scroll { 
+  position: relative;
+  height:400px;
+  overflow-y:scroll;
+}
+
+p.experience-list {
+  padding-left:17px;
+  color: #F1BB87;
 }
 
 ul.skills-list {
   list-style-type: none;
   padding: 0px;
-
-
 }
 
 .skills-list > li:before {
@@ -78,42 +102,27 @@ a:hover, a:active {
   /*text-decoration: underline;*/
 }
 
-/*.active {
-  color: #01AFB0;
+.navbar-light .navbar-nav .nav-item .active {
+  color: #F6CD5D;
   font-weight: bold;
-  text-decoration: underline;
-  border-bottom-color: #01AFB0;
+  /* text-decoration: underline; */
+  border-bottom-color: #F6CD5D;
   border-bottom: 3px solid;
-}*/
+}
 
-nav ul li a {
+.navbar-light .navbar-nav .nav-link {
   font-size: 16px;
   color: #F1BB87;
   letter-spacing: 1.46px;
-  top: 0;
   margin-top: -4em;
-  padding-top: 0;
-  /*margin-right: */
+  margin-left: 15px;
+  margin-right: 0px;
 }
 
-nav ul li a:hover {
-  /*font-size: 16px;*/
+.navbar-light .navbar-nav .nav-link:hover {
   color: #F6CD5D;
-  /*font-weight: bold;*/
-  /*text-decoration: underline;*/
   border-bottom-color: #F6CD5D;
   border-bottom: 3px solid;
-  /*line-height: 2px;*/
-}
-
-nav ul li a:active {
-  /*font-size: 16px;*/
-  color: #F6CD5D;
-  /*font-weight: bold;*/
-  /*text-decoration: underline;*/
-  border-bottom-color: #F6CD5D;
-  border-bottom: 3px solid;
-  /*line-height: 2px;*/
 }
 
 a:focus {
@@ -121,12 +130,6 @@ a:focus {
   text-decoration: none;
   /*border-bottom-color: #773344;*/
   border-bottom: none;
-}
-
-nav ul li {
-  margin-top: 0px;
-  margin-left: 15px;
-  margin-right: 0px;
 }
 
 #social-media {
@@ -146,3 +149,8 @@ nav ul li {
   color: #F6CD5D;
   text-decoration: none;
 }
+
+
+
+
+
